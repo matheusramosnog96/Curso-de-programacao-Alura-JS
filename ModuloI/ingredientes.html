@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<h1>Receitas do Yan</h1>
+
+<script>
+    function contador(){
+        contador(contador);
+    }
+    function sorteia() {
+        var ingredientes = [];
+
+        Math.round(Math.random * contadorDosIngredientes);
+
+        var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));
+
+        var contadorDosIngredientes = 1;
+
+        while (contador <= quantidade) {
+            var ingredientelistado = sorteia();
+            var ingrediente = prompt("Informe o ingrediente " + contador);
+
+            ingredientes.push(ingrediente);
+
+            contador++;
+        }
+    } 
+    var ingredientes = sorteia(contador)
+    console.log(ingredientes);
+
+</script>
